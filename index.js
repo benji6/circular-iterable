@@ -1,5 +1,6 @@
 export default (...args) => {
   const {length} = args;
+  let index = 0;
   const ret = i => {
     while (i >= length) {
       i -= length;
@@ -9,7 +10,6 @@ export default (...args) => {
     }
     return args[i];
   };
-  let index = 0;
   ret[Symbol.iterator] = function* () {
     while (true) {
       yield args[index];

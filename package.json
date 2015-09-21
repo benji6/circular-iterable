@@ -4,13 +4,12 @@
   "description": "circular-iterable",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/babel-node test | node_modules/.bin/tnyan"
+    "test": "node_modules/.bin/babel-node test"
   },
   "author": "Ben Hall",
   "license": "MIT",
   "devDependencies": {
     "babel": "^5.8.23",
-    "tap-nyan": "0.0.2",
     "tape": "^4.2.0"
   }
 }
