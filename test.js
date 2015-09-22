@@ -32,14 +32,14 @@ syncTest('implements iterator protocol', t => {
 syncTest('has size property',
          t => t.equal(cI.size, testDataLength));
 
-syncTest('has getArray method',
+syncTest('has toArray method',
          t => t.deepEqual(cI.toArray(), testData));
 
 syncTest('new iterators are unaffected by state of old iterators', t => {
   const iterator = cI[Symbol.iterator]();
   const sliceTo = Math.round(testData.length / 2);
   const testVal = testData.slice(0, sliceTo)
-                          .reduce(() => iterator.next(), null)
+                          .reduce(::iterator.next, null)
 
   t.deepEqual(testVal, {value: testData[sliceTo - 1], done: false});
   const newIterator = cI[Symbol.iterator]();

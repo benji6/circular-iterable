@@ -4,7 +4,7 @@
   "description": "circular-iterable",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/babel-node test"
+    "test": "node_modules/.bin/babel-node --stage 0 test"
   },
   "author": "Ben Hall",
   "license": "MIT",
