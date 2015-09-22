@@ -1,5 +1,6 @@
 # circular-iterable
 
+[![npm version](https://badge.fury.io/js/circular-iterable.svg)](http://badge.fury.io/js/circular-iterable)
 [![Build Status](https://travis-ci.org/benji6/circular-iterable.svg?branch=master)](https://travis-ci.org/benji6/circular-iterable)
 
 Create circular, iterable data structures in JS.
