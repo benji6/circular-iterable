@@ -1,7 +1,19 @@
 {
   "name": "circular-iterable",
-  "version": "0.0.0",
-  "description": "circular-iterable",
+  "version": "1.0.0",
+  "description": "Create circular, iterable data structures in JS",
+  "keywords": [
+    "array",
+    "circular",
+    "cyclical",
+    "data",
+    "iterable",
+    "iterator",
+    "list",
+    "repeating",
+    "structure",
+    "vector"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/babel-node --stage 0 test"
