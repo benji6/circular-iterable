@@ -1,4 +1,4 @@
-module.exports = (...args) => {
+export default (...args) => {
   const {length} = args;
   const ret = i => {
     while (i >= length) {
