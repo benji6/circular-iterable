@@ -1,6 +1,6 @@
 {
   "name": "circular-iterable",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Create circular, iterable data structures in JS",
   "keywords": [
     "array",
@@ -26,6 +26,8 @@
     "tape": "^4.2.0"
   },
   "browserify": {
-    "transform": ["babelify"]
+    "transform": [
+      "babelify"
+    ]
   }
 }
