@@ -24,5 +24,8 @@
   "devDependencies": {
     "babel": "^5.8.23",
     "tape": "^4.2.0"
+  },
+  "browserify": {
+    "transform": ["babelify"]
   }
 }
