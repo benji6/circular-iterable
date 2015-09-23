@@ -7,6 +7,8 @@ Create circular, iterable data structures in JS.
 
 ## Installation
 
+**NB This library is written in ES2015 and implements the iterable and iterator protocols and also makes use of a generator function. As such you will either need to be using an ES2015 runtime or transpiling your code. If using Babel then ensure you have the `babel-runtime` package installed.**
+
 ```bash
 npm i -D circular-iterable
 ```
@@ -73,6 +75,4 @@ circularData.toArray(); // => [1, 2, 3]
 
 ## Implementation
 
-This library is written in ES2015 and implements the iterable and iterator protocols. As such you will either need to be using an ES2015 runtime or transpiling your code.
-
-It's also worth mentioning that there is no deep cloning of elements passed to circular-iterable so mutate them at your own peril.
+There is no deep cloning of elements passed to circular-iterable so mutate them at your own peril.
