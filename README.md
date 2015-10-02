@@ -5,9 +5,17 @@
 
 Create circular, iterable data structures in JS.
 
-## Installation
+## Transpiling
 
-**NB This library is written in ES2015 and implements the iterable and iterator protocols and also makes use of a generator function. As such you will either need to be using an ES2015 runtime or transpiling your code. If using Babel then ensure you have the `babel-runtime` package installed.**
+**NB This library is written in ES2015 and implements the iterable and iterator protocols and also makes use of a generator function. As such you will either need to be using an ES2015 runtime or transpiling your code.**
+
+If using Babel then ensure you have the `babel-runtime` package installed. This module should work with `babelify` with no further configuration. If using in node Babel will not transpile node_modules by default and you will have to modify its ignore regex, check out the docs for more info, here is a CLI example:
+
+```bash
+babel-node --ignore node_modules\/!circular-iterable/
+```
+
+## Installation
 
 ```bash
 npm i -D circular-iterable
