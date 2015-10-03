@@ -16,6 +16,10 @@
     "vector"
   ],
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benji6/circular-iterable.git"
+  },
   "scripts": {
     "test": "node_modules/.bin/babel-node --stage 0 test"
   },
