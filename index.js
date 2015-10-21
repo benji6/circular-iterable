@@ -8,7 +8,6 @@ export default (...args) => {
       index = index === length - 1 ? 0 : index + 1;
     }
   };
-  circularData.size = args.length;
   circularData.toArray = () => [...args];
   return circularData;
 };

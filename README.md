@@ -69,12 +69,6 @@ newIterator.next(); // => {value: 1, done: false}
 iterator.next(); // => {value: 3, done: false}
 ```
 
-#### Size
-
-```javascript
-circularData.size; // => 3
-```
-
 #### toArray
 
 ```javascript

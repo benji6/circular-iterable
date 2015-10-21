@@ -29,9 +29,6 @@ syncTest('implements iterator protocol', t => {
     .map(x => t.deepEqual(iterator.next(), {value: x, done: false}));
 });
 
-syncTest('has size property',
-         t => t.equal(cI.size, testDataLength));
-
 syncTest('has toArray method',
          t => t.deepEqual(cI.toArray(), testData));
 
