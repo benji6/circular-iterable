@@ -18,7 +18,7 @@ babel-node --ignore node_modules\/!circular-iterable/
 ## Installation
 
 ```bash
-npm i -D circular-iterable
+npm i -S circular-iterable
 ```
 
 ## API
