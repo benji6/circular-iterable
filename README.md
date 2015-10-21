@@ -81,6 +81,17 @@ circularData.size; // => 3
 circularData.toArray(); // => [1, 2, 3]
 ```
 
+## Transducer Example
+
+```javascript
+import circularIterable from 'circular-iterable';
+import {append, compose, flip, map, multiply, take, transduce} from 'ramda';
+
+const circularData = circularIterable(1, 2, 3);
+const transducer = compose(map(multiply(3)), take(5));
+transduce(transducer, flip(append), [], circularData); // => [3, 6, 9, 3, 6]
+```
+
 ## Implementation
 
 There is no deep cloning of elements passed to circular-iterable so mutate them at your own peril.
