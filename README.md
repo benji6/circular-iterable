@@ -1,3 +1,4 @@
+# **NB This library is deprecated, check out [imlazy](https://github.com/benji6/imlazy) instead**
 # circular-iterable
 
 [![npm version](https://badge.fury.io/js/circular-iterable.svg)](http://badge.fury.io/js/circular-iterable)
